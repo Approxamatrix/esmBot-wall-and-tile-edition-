@@ -1,6 +1,9 @@
 #ifdef MAGICK_ENABLED
 #include <Magick++.h>
 
+#include <vips/vips8>
+
+
 #include <cstring>
 #include <iostream>
 #include <list>
@@ -9,6 +12,9 @@
 
 using namespace std;
 using namespace Magick;
+using namespace vips;
+
+
 
 ArgumentMap Wall([[maybe_unused]] const string& type, string& outType, const char* bufferdata, size_t bufferLength, [[maybe_unused]] ArgumentMap arguments, size_t& dataSize)
 {
